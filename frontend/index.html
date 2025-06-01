@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Digit Classifier</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Digit Classifier</h2>
+    <label>Select Model:
+      <select id="model">
+        <option value="svm">SVM</option>
+        <option value="rf">Random Forest</option>
+        <option value="knn">KNN</option>
+        <option value="cnn">CNN</option>
+      </select>
+    </label>
+
+    <textarea id="pixels" placeholder="Paste 64 comma-separated pixel values (0–16)..."></textarea>
+    <button onclick="submitData()">Predict</button>
+    <p id="result"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
